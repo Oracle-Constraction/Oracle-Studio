@@ -9,17 +9,17 @@
 </title><meta content="Architecture Design &amp; Visualisation Studio" name="description"/><style>
 .logo-title-container {
     position: fixed;
-    top: 3.5%;
-    left: 75%;
+    top: 5%;
+    left: 2%;
+    z-index: 1000;
     display: flex;
-    align-items: flex-start; /* Aligns items to the top of the container */
+    align-items: center;
 }
 
 .title-text {
-    font-size: 22px;
+    margin-right: 5px;  /* Reduced margin to make title and logo closer */
+    font-size: 24px;
     font-weight: bold;
-   
-    display: flex;
 }
 
 .logo-container img {
@@ -29,10 +29,13 @@
     height: auto;
 }
 
+#title a{color:#111111;font-size: 10px;margin-bottom:20px;}
+
 /* Media query for responsiveness */
 @media (max-width: 768px) {
-    .title-text {
-        font-size: 16px;  /* Adjust the font size for smaller screens */
+    .logo-title-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .logo-container img {
@@ -41,17 +44,7 @@
     }
 }
 </style><link href="https://assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css?_v=f085dde138e244526309d4673db67b4c" media="screen" rel="stylesheet"/><link href="https://taoudesign.blog/rss" rel="alternate" type="application/rss+xml"/><link href="https://64.media.tumblr.com/d509c188368c9e29eddde334da0df5ae/13c84ff380723d6c-9f/s1280x1920/583fcdd9d56d7808b328484ad06dad00b05db22a.pnj" rel="shortcut icon"/><link href="https://64.media.tumblr.com/f26a31180a236d738510fc0a631d40a0/792bbc4c250969b3-51/s128x128u_c1/85c00920a656211a755d030ad6ceb48d331d59d9.pnj" rel="apple-touch-icon-precomposed"/><link href="https://fonts.googleapis.com/css?family=Helvetica Neue:400,400italic,700,700italic" rel="stylesheet"/><link href="https://static.tumblr.com/j6tha7z/ObQp28wcs/s.css" rel="stylesheet"/><style>
-    body{font:13px/1.8em "Helvetica Neue",Helvetica,sans-serif;color:#555555;background:#ffffff url(https://assets.tumblr.com/images/x.gif?v=1)no-repeat center fixed;background-size:cover;-webkit-background-size:cover}h1,h2,h3,h4,h5,h6{font:700 13px/1.5em "Helvetica Neue",Helvetica,sans-serif;color:#111111}a{color:#0040ff}#title {
-    position: relative;  /* Setting the position to relative so that the child's position is relative to this */
-}
-
-#title a {
-    color: #111111;
-    font-size: 10px;
-    position: absolute;  /* Absolute position relative to the nearest positioned ancestor */
-    top: -40px; 
-right: 80px; /* Moves the element 40px down from the top edge of its parent */
-}#links.responsive ul{background:#111111}#links.responsive ul li a{color:#ffffff!important}.action a{font-family:"Helvetica Neue",Helvetica Neue,Helvetica,sans-serif;color:#111111}.action a:hover{border-bottom:2px solid#111111}#links #social{display:none;}#links #social li a{color:rgba(17,17,17,.6)}#links #social li a:hover{border-bottom:2px solid rgba(17,17,17,.4)}#social.icon-social-links li a{color:#111111!important}#pagination a{color:#111111}.hover-1 .ot a,.hover-2 .ot a,.hover-3 a{font:700 20px/1em "Helvetica Neue",Helvetica,sans-serif;color:#0040ff}#loading-status,#loading-status a{font-family:"Helvetica Neue",Helvetica Neue,Helvetica,sans-serif;color:#111111}.two-late .X.format-photo:after{box-shadow:inset 0 0 9px 9px#ffffff}.text h2 a{color:#111111}.text-hover a{font:700 15px/1em "Helvetica Neue",Helvetica,sans-serif;color:#0040ff}.text blockquote{border-left:2px solid#555555}.text .asker a{font:700 8px/1.5em "Helvetica Neue",Helvetica,sans-serif;color:#111111}h1.fixed a,#links ul li a{font-family:"Helvetica Neue",Helvetica Neue,Helvetica,sans-serif}#controls a,#post-action>a,#post-action #note-counts,ol.notes li.note.more_notes_link_container,ol.notes li.note.more_notes_link_container a{font-family:"Helvetica Neue",Helvetica Neue,Helvetica,sans-serif;color:#111111}ol.notes li.note:before{font-family:"Helvetica Neue",Helvetica Neue,Helvetica,sans-serif}#ajax-load #ajax-overlay{background:#ffffff}.follow-teaser {display: none}
+    body{font:13px/1.8em "Helvetica Neue",Helvetica,sans-serif;color:#555555;background:#ffffff url(https://assets.tumblr.com/images/x.gif?v=1)no-repeat center fixed;background-size:cover;-webkit-background-size:cover}h1,h2,h3,h4,h5,h6{font:700 13px/1.5em "Helvetica Neue",Helvetica,sans-serif;color:#111111}a{color:#0040ff}#links.responsive ul{background:#111111}#links.responsive ul li a{color:#ffffff!important}.action a{font-family:"Helvetica Neue",Helvetica Neue,Helvetica,sans-serif;color:#111111}.action a:hover{border-bottom:2px solid#111111}#links #social{display:none;}#links #social li a{color:rgba(17,17,17,.6)}#links #social li a:hover{border-bottom:2px solid rgba(17,17,17,.4)}#social.icon-social-links li a{color:#111111!important}#pagination a{color:#111111}.hover-1 .ot a,.hover-2 .ot a,.hover-3 a{font:700 20px/1em "Helvetica Neue",Helvetica,sans-serif;color:#0040ff}#loading-status,#loading-status a{font-family:"Helvetica Neue",Helvetica Neue,Helvetica,sans-serif;color:#111111}.two-late .X.format-photo:after{box-shadow:inset 0 0 9px 9px#ffffff}.text h2 a{color:#111111}.text-hover a{font:700 15px/1em "Helvetica Neue",Helvetica,sans-serif;color:#0040ff}.text blockquote{border-left:2px solid#555555}.text .asker a{font:700 8px/1.5em "Helvetica Neue",Helvetica,sans-serif;color:#111111}h1.fixed a,#links ul li a{font-family:"Helvetica Neue",Helvetica Neue,Helvetica,sans-serif}#controls a,#post-action>a,#post-action #note-counts,ol.notes li.note.more_notes_link_container,ol.notes li.note.more_notes_link_container a{font-family:"Helvetica Neue",Helvetica Neue,Helvetica,sans-serif;color:#111111}ol.notes li.note:before{font-family:"Helvetica Neue",Helvetica Neue,Helvetica,sans-serif}#ajax-load #ajax-overlay{background:#ffffff}.follow-teaser {display: none}
     
     
     <title>Oracle Studio design</title><meta name=description content="ARCHITECTURE DESIGN AND VISUALISATION STUDIO"><style>
@@ -205,6 +198,8 @@ opacity: 0; } }
         <img src="https://64.media.tumblr.com/d2173565fc1f360b42f5b29a36a08bed/0dccf5b1b0ff82ab-64/s540x810/1425c60f9b4aa7638449f7fe32a313ab8642c731.pnj" alt="Logo">
     </div>
 </div>
+
+
 
 
 
