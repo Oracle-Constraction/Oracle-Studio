@@ -12,12 +12,13 @@
     top: 2%;
     left: 56%;
     z-index: 1000;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto; /* Two columns of automatic width */
     align-items: center;
 }
 
 .title-text {
-    margin-right: 5px;  /* Reduced margin to make title and logo closer */
+    margin-right: 5px;  /* Space between the title and the logo */
     font-size: 24px;
     font-weight: bold;
 }
@@ -31,18 +32,13 @@
 
 /* Media query for responsiveness */
 @media (max-width: 768px) {
-    .logo-title-container {
-        flex-direction: row;  /* Keep it as row to have them in the same line */
-        align-items: center;
+    .title-text {
+        font-size: 16px;  /* Adjust the font size for smaller screens */
     }
 
     .logo-container img {
         max-width: 35px;
         max-height: 20px;
-    }
-
-    .title-text {
-        font-size: 16px;  /* You may need to adjust the font size for smaller screens */
     }
 }
 </style><link href="https://assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css?_v=f085dde138e244526309d4673db67b4c" media="screen" rel="stylesheet"/><link href="https://taoudesign.blog/rss" rel="alternate" type="application/rss+xml"/><link href="https://64.media.tumblr.com/d509c188368c9e29eddde334da0df5ae/13c84ff380723d6c-9f/s1280x1920/583fcdd9d56d7808b328484ad06dad00b05db22a.pnj" rel="shortcut icon"/><link href="https://64.media.tumblr.com/f26a31180a236d738510fc0a631d40a0/792bbc4c250969b3-51/s128x128u_c1/85c00920a656211a755d030ad6ceb48d331d59d9.pnj" rel="apple-touch-icon-precomposed"/><link href="https://fonts.googleapis.com/css?family=Helvetica Neue:400,400italic,700,700italic" rel="stylesheet"/><link href="https://static.tumblr.com/j6tha7z/ObQp28wcs/s.css" rel="stylesheet"/><style>
@@ -200,7 +196,6 @@ opacity: 0; } }
         <img src="https://64.media.tumblr.com/d2173565fc1f360b42f5b29a36a08bed/0dccf5b1b0ff82ab-64/s540x810/1425c60f9b4aa7638449f7fe32a313ab8642c731.pnj" alt="Logo">
     </div>
 </div>
-
 
 
 
